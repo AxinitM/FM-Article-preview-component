@@ -3,14 +3,12 @@
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 
 ## Table of contents
-
-- [FM - Article preview component solution](#fm---article-preview-component-solution)
-  - [Table of contents](#table-of-contents)
-  - [Brief](#brief)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [Author](#author)
+- [Table of contents](#table-of-contents)
+- [Brief](#brief)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
 
 ## Brief
 View the optimal layout for the component depending on their device's screen size. 
@@ -18,7 +16,7 @@ See the social media share links when they click the share icon
 
 ## Screenshot
 
-![](./images/screenshot.jpg)
+![](/images/screenshot.jpg)
 
 ## Links
 
