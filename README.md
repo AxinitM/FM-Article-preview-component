@@ -20,7 +20,7 @@ See the social media share links when they click the share icon
 
 ## Links
 
-Page URL: [Add solution URL here](https://your-solution-url.com)
+[Page URL](https://axinitm.github.io/FM-Article-preview-component/)
 
 ## Built with
 
