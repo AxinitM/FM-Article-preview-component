@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>FM | Article preview component</title>
+  </head>
+  <body>
+    <main id="main-container">
+      <div id="image-left-section">
+        <img src="images/drawers-small.jpg" alt="Drawers image" />
+      </div>
+      <div id="text-right-section">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div id="right-header-section">
+          <div id="person-section">
+            <img
+              src="images/avatar-michelle.jpg"
+              alt="Michelle's photo"
+              id="author-image"
+            />
+            <div class="name-and-date-section">
+              <h2>Michelle Appleton</h2>
+              <h3>28 Jun 2020</h3>
+            </div>
+          </div>
+          <div class="share-container">
+            <div id="share-button">
+              <svg
+                id="share-icon"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="16" cy="16" r="16" fill="var(--accentLightColor)" />
+                <path
+                  d="M24 15.495L17.7663 9.01392V12.8807H16.4409C12.3314 12.8807 9 16.0393 9 19.9358V21.9849L9.58868 21.3733C11.5901 19.2941 14.4221 18.1094 17.3912 18.1094H17.7663V21.9762L24 15.495Z"
+                  fill="var(--mainTextColor)"
+                />
+              </svg>
+              <!-- <img src="images/icon-share.svg" alt="Icon share image" id="share-icon"/> -->
+            </div>
+            <div id="social-links">
+              <h3>Share</h3>
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com"
+                target="_blank"
+                class="social-icon"
+              >
+                <img src="images/icon-facebook.svg" alt="Facebook icon" />
+              </a>
+
+              <a
+                href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check+this+out!"
+                target="_blank"
+                class="social-icon"
+              >
+                <img src="images/icon-twitter.svg" alt="Twitter icon" />
+              </a>
+
+              <a
+                href="https://pinterest.com/pin/create/button/?url=https://yourwebsite.com&media=https://yourwebsite.com/image.jpg&description=Check+this+out!"
+                target="_blank"
+                class="social-icon"
+              >
+                <img src="images/icon-pinterest.svg" alt="Pinterest icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="www.frontender.biz" target="_blank">Andrei Martinenko</a>.
+    </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>

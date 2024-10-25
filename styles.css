@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+:root {
+  /* colors */
+  --headerColor: #48556a; /*  -VeryDarkGrayishBlue */
+  --mainTextColor: #6e8098; /* Desaturated Dark Blue*/
+  --dateAccentColor: #9daec2; /* GrayishBlue*/
+  --accentLightColor: #ecf2f8; /* LightGrayishBlue*/
+  --boxShadowColor: #0000001a;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --attributionColor: #3e52a3;
+
+  /* fonts */
+  --mainFontFamily: "Manrope", Georgia, sens-serif; /*  - Weights: 500, 700 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  font-size: 13px;
+  background-color: var(--accentLightColor);
+  font-family: var(--mainFontFamily);
+  font-weight: 500;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 730px;
+  height: 280px;
+  border-radius: 10px;
+  background-color: var(--whiteColor);
+  box-shadow: 3px 3px 10px var(--dateAccentColor),
+    -3px -3px 10px var(--dateAccentColor);
+}
+
+#image-left-section {
+  display: flex;
+  justify-content: center;
+}
+
+#image-left-section img {
+  width: 285px;
+  height: 280px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#text-right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 365px;
+  height: 216px;
+  margin: 0 auto;
+  color: var(--mainTextColor);
+}
+
+#text-right-section h1 {
+  color: var(--headerColor);
+  width: 365px;
+  height: 84px;
+  font-size: 20px;
+  text-align: left;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  font-weight: 700;
+}
+#text-right-section p {
+  width: 365px;
+  height: 60px;
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 0.12px;
+  line-height: 20px;
+  margin: 15px 15px 20px;
+}
+
+/* person and share section */
+
+#right-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#person-section {
+  display: flex;
+  align-items: center;
+  width: 172px;
+  height: 40px;
+}
+
+#person-section h2 {
+  color: var(--headerColor);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 0.12px;
+  line-height: 20px;
+}
+
+#person-section h3 {
+  color: var(--dateAccentColor);
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 0.12px;
+  line-height: 20px;
+}
+
+.name-and-date-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+#author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.share-container {
+  position: relative;
+}
+
+#social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s ease;
+  position: absolute;
+  bottom: 40px;
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: var(--headerColor);
+  color: var(--accentLightColor);
+  border-radius: 10px;
+  padding: 10px;
+  width: 240px;
+  box-shadow: 0 4px 6px var(--boxShadowColor);
+  text-align: center;
+  z-index: 1;
+}
+
+#social-links h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1em;
+  color: var(--dateAccentColor);
+}
+
+.social-icon {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#social-links.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #main-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 327px;
+    height: auto;
+    margin: -50px auto 0px;
+    overflow: hidden;
+  }
+
+  #image-left-section img {
+    width: 327px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    content: url(images/drawers.jpg);
+    object-fit: cover;
+  }
+
+  #text-right-section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #text-right-section h1 {
+    width: 263px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 auto;
+    padding: 25px 30px 15px;
+    width: 100%;
+  }
+
+  #text-right-section p {
+    width: 100%;
+    font-size: 13px;
+    letter-spacing: 0.12px;
+    line-height: 20px;
+    margin: 0;
+    padding: 15px 30px;
+    margin-top: 15px;
+  }
+
+  #right-header-section {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    margin: 60px 0px 15px;
+  }
+
+  #person-section {
+    margin-left: 25px;
+    text-align: center;
+
+    width: 100%;
+  }
+
+  .name-and-date-section {
+    text-align: left;
+  }
+
+  #social-links {
+    bottom: -19px;
+    left: -131.9px;
+    width: 327.2px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  #share-button {
+    transform: translateX(-35px);
+  }
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); } */
