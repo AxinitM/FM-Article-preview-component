@@ -16,7 +16,7 @@ See the social media share links when they click the share icon
 
 ## Screenshot
 
-![](/images/screenshot.jpg)
+![](images/screenshot.jpg)
 
 ## Links
 
